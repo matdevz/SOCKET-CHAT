@@ -17,12 +17,21 @@
 			<section class="main__messages" id="messages"></section>
 
 			<form class="main__send-form" onsubmit="event.preventDefault()">
-				<input
-					class="main__send-message"
-					type="text"
-					id="formMessage"
-					placeholder="Digite sua mensagem..."
-				/>
+				<div class="main__send-container">
+					<input
+						class="main__send-message"
+						type="text"
+						id="formMessage"
+						placeholder="Digite sua mensagem..."
+					/>
+					<input
+						class="main__send-message"
+						type="text"
+						id="formName"
+						placeholder="Digite seu nome"
+					/>
+				</div>
+
 				<button class="main__send-btn" id="btnSendMessage">
 					ENVIAR
 				</button>
