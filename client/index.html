@@ -4,9 +4,24 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="./styles/style.css" />
 		<title>SOCKET CHAT</title>
 	</head>
 	<body>
-		<h1>Hello my chat</h1>
+		<header class="header">
+			<h1>SOCKET CHAT</h1>
+		</header>
+
+		<main class="main">
+			<section class="main__messages"></section>
+
+			<form class="main__send-form" action="event.preventDefault()">
+				<input class="main__send-message" type="text" />
+				<button class="main__send-btn">ENVIAR</button>
+			</form>
+		</main>
+
+		<script src="./scripts/index.js"></script>
 	</body>
 </html>

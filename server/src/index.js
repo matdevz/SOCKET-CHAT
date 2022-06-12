@@ -10,3 +10,5 @@ app.get('/chats', (req, res) => {
 	res.send('My chat ');
 });
 const server = app.listen(process.env.PORT, () => console.log());
+
+const io = socketIO(server);
